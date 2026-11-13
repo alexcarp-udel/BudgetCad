@@ -6,6 +6,8 @@ set_website_title("BudgetCad")
 set_site_information(
     author="Alexander Carpenter",
     description="Make Simple Designs and Assemblies",
+    sources="Thanks to the Drafter docs and my study group.",
+    planning=[],
     links=["https://github.com/your-username/your-repository"]
 )
 hide_debug_information()
