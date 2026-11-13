@@ -15,15 +15,7 @@ set_website_framed(False)
 
 
 #defining dataclasses
-@dataclass
-class State:
-    chosen_shape: str
-    designs: list[Design]
-    pending_volume: float
-    materials: list[Material]
-    assemblies: list[Assembly]
-    pending_assembly: list[Design]
-    pending_assembly_name: str
+
     
 @dataclass
 class Material:
@@ -40,7 +32,16 @@ class Design:
 class Assembly:
     name: str
     designs: list[Design]
-    
+
+@dataclass
+class State:
+    chosen_shape: str
+    designs: list[Design]
+    pending_volume: float
+    materials: list[Material]
+    assemblies: list[Assembly]
+    pending_assembly: list[Design]
+    pending_assembly_name: str
     
 
 #defining routes
